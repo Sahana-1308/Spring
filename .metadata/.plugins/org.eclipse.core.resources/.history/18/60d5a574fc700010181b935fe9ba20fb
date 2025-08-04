@@ -1,0 +1,18 @@
+package com.dcl.spring.ioc;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+
+import com.dcl.spring.ioc.bean.Student;
+
+@Configuration
+@ComponentScan("com.dcl.spring.ioc")
+public class AppConfig {
+	//bean definition
+	@Bean
+	public Student getStudent() {
+		return new Student();
+	}
+}

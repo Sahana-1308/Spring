@@ -1,0 +1,5 @@
+package com.dcl.spring.ioc.component;
+
+public class Employee {
+
+}
